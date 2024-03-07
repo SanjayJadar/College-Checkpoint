@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGC Tourist Agency</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+                        <!-- CheckPoint one HTML   -->
+ 
+    <div id="navbar"> 
+        <div id="brand"> 
+            <img src="bd0e4-cropped-sgc-logo-round.png" alt="Brand Logo">
+            <span style="font-size: larger;">Sanjay Groups of Company</span>
+        </div>
+
+        <ul id="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Book</a></li>
+            <li id="packages"><a href="#">Packages</a> 
+                <ul>
+                    <li><a href="#">United States</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">France</a></li>
+                    <li><a href="#">Germany</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+
+        <div id="login-register">
+            <button id="login-btn">Login</button>
+            <button id="submit-btn">Register</button>
+        </div>
+    </div>
+ 
+    <div id="background-image"> 
+        <div id="welcome-text">
+            <h1>Welcome to Sanjay Groups Of Company</h1>
+        </div>
+
+        <div id="visit-text">
+            <h2>Visit <span id="place-name">Placename</span></h2>
+        </div>
+
+        <a href="#" id="book-now-btn">Book Now</a>
+    </div>
+
+
+
+
+
+
+
+                    <!-- Check Point two HTML  -->
+
+    <h1 class="main-heading">Book You Trip</h1>
+    <div class="main-container-1">
+        <div class="left-main-container">
+            <img src="https://images.unsplash.com/photo-1528543606781-2f6e6857f318?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTB8fHxlbnwwfHx8fHw%3D" alt="">
+        </div>
+        <div class="right-main-container"> 
+            <form>
+                <div class="mb-3">
+                    <input required
+                      type="text"
+                      class="form-control"
+                      id="destination"
+                      list="bookingPlaces"
+                      placeholder="Where To"
+                      required
+                    />
+                    <datalist id="bookingPlaces">
+                      <option value="South Korea">South Korea</option>
+                      <option value="Ukrian">Ukrian</option>
+                      <option value="Russia">Russia</option>
+                      <option value="Afgistan">Afgistan</option>
+                      <option value="South Arab">South Arab</option>
+                      <option value="Iran">Iran</option>
+                      <option value="Pakistan">Pakistan</option>
+                    </datalist>
+                </div><br>
+                <label for="people">How Many Person:</label>
+                <input required style="padding: 10px; border-radius: 10px;" type="number" id="people" name="people" min="1"><br><br>
+                <label for="start-date">Start Date:</label>
+                <input required style="padding: 10px; border-radius: 10px;" type="date" id="start-date" name="start-date" value="" onchange="setMinEndDate()"><br><br>
+                <label for="end-date">End Date:</label>
+                <input required style="padding: 10px; border-radius: 10px;" type="date" id="end-date" name="end-date" min="" disabled><br><br>
+                <label for="description">Description:</label><br>
+                <textarea style="padding: 10px; border-radius: 10px;" id="description" name="description" rows="4" cols="50" minlength="50" maxlength="500"></textarea><br><br>
+                <button style="padding: 10px; border-radius: 10px; background-color: rgb(194, 81, 0); border: none;" type="button" onclick="bookNow()">Book Now</button>
+            </form>
+        </div>
+    </div>
+    
+    <h1 class="main-heading" style="background-color: yellow; margin: 0; padding-top: 30px; color: rgb(117, 106, 93);">Packages</h1>
+    <div id="main-container-2"></div>
+     
+    <h1 class="main-heading" id="services-heading" style="background-color: green; margin: 0; padding: 30px;">Services</h1>
+    <div id="main-container-3" style="padding-bottom: 160px;"></div>
+
+
+                <!-- Check Point three HTML  -->
+    <h1 class="main-heading" style="background-color: blue; margin: 0; padding-top: 30px;">Gallery</h1>    
+    <div class="galary-section-container">
+        <div class="container">
+            <img src="151216114837-drury-mog-5.jpg">
+            <img src="cold-alert-1.avif">
+            <img src="Parelli-pig-Adria-Elliot-4099.jpg">
+            <img src="1637839155553-paragliding-man-vipin-sahu-youtube-meme.webp">
+            <img src="lead_1400x933.webp">
+            <img src="Photo-3.jpg">
+            <img src="bigg-boss-17-house-tour--salman-khan--india-today-144340907-16x9.jpeg">
+            <img src="article-england-london-pub-cheers.jpg">
+        </div>
+    </div>        
+
+    <h1 class="main-heading" style="padding: 70px; background-color: indigo; margin: 0;">About</h1>
+    <div class="about-container">
+        <div class="right-about-container">
+            <img src="dhruvratee.webp" alt="travel dog image">
+        </div>
+        <div class="left-about-container">
+            <p>This company is a top choice for travel agencies, focusing on customer satisfaction as our primary goal. We take pride in making our customers happy and ensuring they have the best experience. With many people visiting different places where our services excel, we prioritize creating connections with locals, understanding local climates, and lifestyles. Our commitment to excellence has led to our continuous growth as a company.</p>
+        </div>
+    </div>
+
+    <h1 class="main-heading" style="background-color: violet; margin: 0; padding: 30px;">Contact Us</h1>
+    <div class="footer-container">
+        <div class="address-container">
+            <p>Loss Angelous Bara Gali Nagpur Wada London - 8055</p>
+            <p>sgc_agency@Imail.com</p>
+            <p>0111010011</p>
+        </div>
+        <div class="social-media-container">
+            <i class="fa fa-facebook" style="color: white; font-size: 25px; margin: 20px;"></i>
+            <i class="fa fa-instagram" style="color: white; font-size: 25px; margin: 20px;"></i>
+            <i class="fa fa-linkedin" style="color: white; font-size: 25px; margin: 20px;"></i>
+            <i class="fa fa-whatsapp" style="color: white; font-size: 25px; margin: 20px;"></i>
+        </div>
+    </div>
+    <p style="color: white; text-align: center; background-color: violet; margin-bottom: 0;">©️Copyright jail upto 3 years</p>
+
+    <script src="script.js"></script>
+</body>
+</html>
