@@ -42,7 +42,52 @@
 
         <div id="login-register">
             <button id="login-btn">Login</button>
+            <!-- Modal -->
+            <div id="login-myModal" class="checkpoint-4-modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                <span class="close1">&times;</span>
+                <h2>Login</h2>
+                <form id="checkpoint-4-loginForm">
+                    <label for="email">Email Id:</label>
+                    <input required type="email" id="checkpoint-4-email2" name="email" required><br>
+                    <label for="password">Password:</label>
+                    <input required type="password" id="checkpoint-4-password2" name="password" minlength="6" required><br>
+                    </select><br>
+                    <input type="submit" value="Login">
+                </form> 
+                </div>
+            </div>
+
             <button id="submit-btn">Register</button>
+            <!-- Modal -->
+            <div id="register-myModal" class="checkpoint-4-modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                <span class="close2">&times;</span>
+                <h2>Register</h2>
+                <form id="checkpoint-4-registerForm">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="checkpoint-4-fullName" name="fullName" required><br>
+                    <label for="contact">Contact:</label>
+                    <input type="text" id="checkpoint-4-contact" name="contact" required><br>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="checkpoint-4-dob" name="dob" required><br>
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="checkpoint-4-email" name="email" required><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="checkpoint-4-password" name="password" minlength="6" required><br>
+                    <label for="gender">Gender:</label>
+                    <select id="checkpoint-4-gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                    </select><br>
+                    <input type="submit" value="Register">
+                </form> 
+                </div>
+            </div>
+
         </div>
     </div>
  

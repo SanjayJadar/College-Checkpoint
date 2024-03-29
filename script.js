@@ -188,3 +188,111 @@ const services = [
             <button class='service' style="background-color: rgb(0, 67, 0);">Try Now</button>
         </div>` 
     }
+
+
+
+                                // Check point 4 script 
+                                
+                                
+                                // Register Model box
+                                // Get the modal
+                                var registerModal = document.getElementById("register-myModal");
+                                
+                                // Get the button that opens the modal
+                                var btn = document.getElementById("submit-btn");
+
+                                // When the user clicks the button, open the modal
+                                btn.onclick = function() {
+    registerModal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close2")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    registerModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == registerModal) {
+        registerModal.style.display = "none";
+    }
+}
+
+// Handle form submission
+function setMinDOB() {
+var minDate = new Date(new Date().getFullYear() - 18, new Date().getMonth(), new Date().getDate()).toISOString().split('T')[0]; 
+// document.getElementById('checkpoint-4-dob').value = minDate; 
+document.getElementById('checkpoint-4-dob').max = minDate; 
+}
+document.getElementById('checkpoint-4-dob').addEventListener('click', setMinDOB);
+document.getElementById("checkpoint-4-registerForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Perform validation and registration logic here  
+    // Calculate the date 18 years ago 
+    // Set the initial value to the minimum date
+   
+    let fullname = document.getElementById('checkpoint-4-fullName');
+    let contact = document.getElementById('checkpoint-4-contact');
+    let email = document.getElementById('checkpoint-4-email');
+    let password = document.getElementById('checkpoint-4-password');  
+    if(fullname.value!='' && contact.value!='' && email.value!='' && password.value!=''){
+        alert('Registered Successfully Bro👍');
+        fullname.value = '';
+        contact.value = '';
+        email.value = '';
+        password.value = '';
+        registerModal.style.display = "none";
+    }
+    else{
+        alert('Bro fill the fields Correctly 🤔');
+    }
+});
+ 
+
+
+                                                        // Login Model Box 
+// Get the modal
+var loginModal = document.getElementById("login-myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("login-btn");
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+    loginModal.style.display = "block";
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close1")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    loginModal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == loginModal) {
+    loginModal.style.display = "none";
+  }
+}
+
+// Handle form submission
+document.getElementById("checkpoint-4-loginForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  // Perform validation and registration logic here
+  let email = document.getElementById('checkpoint-4-email2');
+  let password = document.getElementById('checkpoint-4-password2');
+  if(email.value!=='' && password.value!==''){
+    alert('LogedIn Bro👍');
+    email.value='';
+    password.value='';
+    loginModal.style.display = "none";
+  }
+  else{
+    alert('Bro fill the things correctly🫡')
+  }
+});
