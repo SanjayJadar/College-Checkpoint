@@ -192,21 +192,23 @@ body {
 }
 
 .left-main-container img{
-    width: 75%;
+    width: 60%;
     margin-top: 5%;
+    margin-bottom: 5%;
     display: block;
     margin-left: auto;
     margin-right: auto; 
+    border-radius: 20px;
 }
 
 .right-main-container{
-    width: 50%; 
+    width: 50%;  
 }
 
 .right-main-container form{
     display: flex;
     flex-direction: column;
-    margin: 20%;
+    margin: 5% 20% 5% 20%; 
 }
 
 
@@ -310,7 +312,7 @@ body {
 .galary-section-container {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  min-height: 90vh;
   /* background: var(--gradient-9);  */
   background-color: blue;
 }
@@ -322,8 +324,8 @@ body {
 }
   
 .galary-section-container .container {
-  width: 90vw;
-  height: 80vmin;
+  width: 80vw;
+  height: 75vmin;
   display: flex;
   align-items: center;
   justify-content: center;
